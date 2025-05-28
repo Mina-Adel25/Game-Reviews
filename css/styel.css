@@ -3,10 +3,7 @@
 }
 
 body {
-    font-family: cursive;
-    text-transform: capitalize;
     background-color: #272B30;
-
 }
 
 :root {
@@ -73,6 +70,7 @@ body {
 }
 
 .card-footer span {
+    font-family: cursive;
     font-size: 0.8rem;
     background-color: #2D3134;
 }
@@ -80,6 +78,7 @@ body {
 .card-body .free {
     font-size: 0.8rem;
     background-color: #364989;
+    font-family: cursive;
 }
 
 
@@ -100,6 +99,7 @@ body {
     position: relative;
     box-sizing: border-box;
     animation: rotation 2s linear infinite;
+    z-index: 99999;
 }
 
 .loader::after {
