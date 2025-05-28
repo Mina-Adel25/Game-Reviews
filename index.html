@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./imegs/logo-footer.png" type="logo" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/styel.css">
+</head>
+
+<body>
+
+
+    <div class="home">
+        <header class="">
+            <div class="head  "></div>
+        </header>
+        
+        <nav class="navbar navbar-expand-lg position-sticky top-0 w-100 pb-5 ">
+                <div class="container nav rounded-4 py-1 px-3 ">
+                    <a class="navbar-brand" href="./index.html">
+                        <div class="d-flex align-items-center">
+                            <img src="./imegs/logo-footer.png" alt="logo" width="50">
+                            <h1 class="fs-4 m-0 fw-bolder text-uppercase"> Game Reviews</h1>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"
+                                    data-ccategory="mmorpg">mmorpg</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-ccategory="shooter">shooter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-ccategory="sailing">sailing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-ccategory="permadeath">permadeath</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-ccategory="superhero"> superhero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-ccategory="pixel">pixel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        <section class="container ">
+            <div class="row g-4" id="gameData">
+
+
+            </div>
+        </section>
+
+    </div>
+
+    <section class="d-flex justify-content-center align-items-center d-none lodeng">
+        <div class="loader "></div>
+    </section>
+
+    <section class="details  d-none ">
+
+        <div class="container position-relative py-5 ">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="mb-3">Details Game</h2>
+                <button class="xmark btn-close btn-close-white"></button>
+            </div>
+
+            <div class="row " id="detailsData">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <div id="imageModal"
+        class="modal-img d-none position-fixed top-0 start-0 w-100 h-100 bg-black bg-opacity-75 d-flex justify-content-center align-items-center"
+        style="z-index: 9999;">
+        <img id="modalImage" src="" class="img-fluid rounded-3 shadow" style="max-height: 90%; max-width: 90%;">
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/mainjs.js"></script>
+</body>
+
+</html>

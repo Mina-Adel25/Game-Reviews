@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    text-transform: capitalize;
+    background-color: #272B30;
+
+}
+
+:root {
+    --font-Nerko-: "Nerko One", cursive;
+    --color-active-: #069acd;
+}
+.navbar{
+ z-index: 9999999;
+}
+
+.head {
+    height: 35vh;
+    background-image:linear-gradient(to bottom ,#272b3000 90%,#272B30), url(../imegs/wraper.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+
+.nav {
+    background-color: #3A497B;
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar a {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: var(--color-active-);
+}
+
+.card {
+    background-color: #272B30;
+    color: white;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+}
+
+.card h3 {
+    font-family: 'Nerko One', cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.card-footer span {
+    font-size: 0.8rem;
+    background-color: #2D3134;
+}
+
+.card-body .free {
+    font-size: 0.8rem;
+    background-color: #364989;
+}
+
+
+
+.card-text {
+    font-size: 0.875em;
+    font-family: 'Comfortaa', sans-serif;
+    color: #787878;
+}
+
+.loader {
+    border: 2px solid;
+    border-color: transparent #FFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 24px solid;
+    border-color: transparent rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.lodeng{
+    width: 100%;
+    background-color: #151a2cbf;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+.details{
+    color: white;
+}
+.modal-content{
+    height: 100vh;
+    align-items: center;
+}
+
+.modal-img {
+  cursor: pointer;
+}
+
