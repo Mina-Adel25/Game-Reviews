@@ -99,7 +99,7 @@ body {
     position: relative;
     box-sizing: border-box;
     animation: rotation 2s linear infinite;
-    z-index: 99999;
+   
 }
 
 .loader::after {
@@ -129,6 +129,7 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
+       z-index: 99999999;
 }
 .details{
     color: white;
